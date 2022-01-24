@@ -17,4 +17,4 @@ print(results.summary())
 print('Parameters: ', results.params)
 print('R2: ', results.rsquared)
 with open ("metrics.txt", "w") as f:
-  f.write(f"{results.summary()}")
+  f.write(f"{results.summary().as_text()}")
